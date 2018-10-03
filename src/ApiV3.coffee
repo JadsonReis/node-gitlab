@@ -4,5 +4,5 @@ debug = require('debug') 'gitlab:ApiV3'
 class module.exports.ApiV3 extends ApiBaseHTTP
   handleOptions: =>
     super
-    @options.base_url = 'api/v3'
+    @options.base_url = 'api/v4'
     debug "handleOptions()"
