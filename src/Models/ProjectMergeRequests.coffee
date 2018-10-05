@@ -17,13 +17,14 @@ class ProjectMergeRequests extends BaseModel
     @debug "Projects::mergerequest()"
     @get "projects/#{Utils.parseProjectId projectId}/merge_request/#{parseInt mergerequestId}", (data) => fn data if fn
 
-  add: (projectId, sourceBranch, targetBranch, assigneeId, title, fn = null) =>
+  add: (projectId, sourceBranch, targetBranch, assigneeId, title, label, fn = null) =>
     @debug "Projects::addMergeRequest()"
     params =
       id:            Utils.parseProjectId projectId
       source_branch: sourceBranch
       target_branch: targetBranch
       title:         title
+      labels:        label
     params.assignee_id = parseInt assigneeId unless assigneeId is undefined
     @post "projects/#{Utils.parseProjectId projectId}/merge_requests", params, (data) => fn data if fn
 
