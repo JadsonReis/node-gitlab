@@ -15,6 +15,8 @@ class module.exports.ApiBase
     debug "init()"
     @groups         = require('./Models/Groups')        @client
     @projects       = require('./Models/Projects')      @client
+    @pipelines      = require('./Models/Pipelines')     @client
+    @deployments    = require('./Models/Deployments')   @client
     @issues         = require('./Models/Issues')        @client
     @notes          = require('./Models/Notes')         @client
     #@repositories  = require('./Models/Repositories')  @client

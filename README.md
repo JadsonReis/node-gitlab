@@ -26,7 +26,7 @@ npm install gitlab
 Usage
 =====
 
-URL to your GitLab instance should not include `/api/v3` path.
+URL to your GitLab instance should not include `/api/v4` path.
 
 Coffee-Script
 -------------
@@ -121,6 +121,13 @@ MIT
 
 Changelog
 =========
+
+master (unreleased)
+-------------------
+
+* No entry.
+
+[Full commits list](https://github.com/node-gitlab/node-gitlab/compare/v1.7.1...master)
 
 [1.7.1](https://github.com/node-gitlab/node-gitlab/tree/v1.7.1) (2016-08-04)
 -------------------
